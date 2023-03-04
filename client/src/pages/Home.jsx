@@ -40,7 +40,7 @@ const Home = () => {
         <div className="bg-white">
           <div className="py-40  mx-auto bg-bgphoto2 bg-fixed bg-cover ">
             <p className=" text-black md:text-8xl lg:text-7xl text-5xl text-center  mt-[200x] w-full font-bold font-playfair ">
-              "WANDER OFTEN,WONDER ALWAYS"
+              "WANDER OFTEN, WONDER ALWAYS"
             </p>
           </div>
         </div>
