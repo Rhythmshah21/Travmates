@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 // import Button from "./Button";
-import { Button } from "@mui/material";
 
 const Nav = () => {
   const links = [
     { id: 1, name: "HOME", link: "/" },
-    { id: 2, name: "EXPLORE", link: "/" },
-    { id: 3, name: "ABOUT", link: "/" },
-    { id: 4, name: "BLOG'S", link: "/" },
-    { id: 5, name: "Info ", link: "/" },
+    { id: 2, name: "EXPLORE", link: "/explore" },
+    { id: 3, name: "ABOUT", link: "/about" },
+    { id: 4, name: "BLOG'S", link: "/blog" },
+    { id: 5, name: "INFO ", link: "/travelinfo" },
   ];
   let [open, setOpen] = useState(false);
   return (
