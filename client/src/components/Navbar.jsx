@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import Button from "./Button";
+import { Button } from "@mui/material";
 
 const Nav = () => {
   const links = [
@@ -12,7 +13,7 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <>
-      <div className="shadow-md w-full  fixed top-0 left-0 z-10">
+      <div className="shadow-md w-full font-montserrat fixed top-0 left-0 z-10">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div
             className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
@@ -44,6 +45,9 @@ const Nav = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <Button><p className="bg-blue-600 text-white text-xl px-2 mx-4 rounded">Login</p></Button>
+            </li>
           </ul>
         </div>
       </div>
