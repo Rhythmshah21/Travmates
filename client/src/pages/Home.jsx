@@ -4,11 +4,11 @@ const Home = () => {
   return (
     <div>
       <div className="relative">
-        <div className=" bg-cover bg-fixed">
-          <img
-            src="https://www.pixelstalk.net/wp-content/uploads/images6/Travel-HD-Wallpaper-Free-download.jpg"
-            className="w-full h-screen a z-0 "
-          />
+        <div className="">
+        <img
+          src="https://www.pixelstalk.net/wp-content/uploads/images6/Travel-HD-Wallpaper-Free-download.jpg"
+          className="w-full h-screen a z-0 "
+        />
         </div>
         <div className=" z-20 ">
           <p className="absolute text-white text-8xl text-center top-2/3 w-full font-bold font-poppins">
@@ -50,7 +50,7 @@ const Home = () => {
               Isiliye yahin, isi pal ka mazza lete hai.”
             </p>
             <p className="text-center text-2xl italic ">
-              
+              {" "}
               “Isliye main udna chahta hun, daudna chahta hun, girna bhi chahta
               hun. Bas, rukna nahi chahta.”
             </p>
