@@ -13,7 +13,7 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <>
-      <div className="shadow-md w-full font-montserrat absolute bg-[#0000009E]  top-0 left-0 z-10  ">
+      <div className="shadow-md w-full font-montserrat fixed bg-[#0000009E]  top-0 left-0 z-10  ">
         <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
           <div className="font-light text-white text-2xl cursor-pointer flex items-center font-[Poppins] ">
             <span className="text-3xl text-white font-playfair mr-1 pt-2">
