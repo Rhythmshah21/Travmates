@@ -2,11 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 import { createContext, useState } from "react";
+import Schedule from "./components/Schedule";
+import TravMates from "./components/TravMates";
+import TouristAttraction from "./components/TouristAttraction";
 
 const Appstate = createContext();
 
@@ -19,9 +22,12 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/travelinfo" element={<Info />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/travmates" element={<TravMates />} />
+        <Route path="/attraction" element={<TouristAttraction />} />
+        <Route path="/userinfo" element={<Info />} />
       </Routes>
       <Footer />
     </Router>
