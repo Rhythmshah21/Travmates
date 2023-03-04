@@ -43,7 +43,7 @@ const Nav = () => {
               </li>
             ))} 
             <li className=" mx-4">
-              <Button><p className=" bg-blue-600 text-white text-xl px-2 rounded">Login</p></Button>
+              <Button><p className=" bg-blue-600 text-white text-xl px-4 py-3 rounded">Login</p></Button>
             </li>
           </ul>
         </div>
