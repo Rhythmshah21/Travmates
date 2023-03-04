@@ -1,9 +1,11 @@
 const express = require('express');
 const dotenv = require("dotenv");
+const blogRoutes=require('./routes/blogRoutes')
 
 const connectDB = require("./config/db");
 const app = express();
 dotenv.config();
+app.use(express.json());
 
 connectDB();
 const middleware = (req, res, next) => {
@@ -16,6 +18,8 @@ app.listen(PORT, console.log(`server started on port ${PORT}`));
 
 const User = require('./models/userSchema')
 
+//app.use(express.json());
+app.use("/api/blogs",blogRoutes);
 app.use(require('./router/auth'))
 
 app.use(express.json());
