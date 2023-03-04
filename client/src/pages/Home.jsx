@@ -3,15 +3,15 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <div className="relative">
-        <div className=" bg-cover bg-fixed">
+      <div className="relative bg-cover bg-fixed">
+      
           <img
             src="https://www.pixelstalk.net/wp-content/uploads/images6/Travel-HD-Wallpaper-Free-download.jpg"
             className="w-full h-screen z-0 bg-cover "
           />
-        </div>
+        
         <div className=" z-20 ">
-          <p className="absolute text-[#213E8C] md:text-8xl lg:text-9xl text-5xl text-center top-2/3 w-full font-bold font-poppins">
+          <p className="absolute text-white md:text-8xl lg:text-9xl text-5xl text-center top-2/3 w-full font-bold font-playfair">
             LET'S TRAVEL!
           </p>
         </div>
@@ -43,7 +43,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="bg-black">
+        <div className="bg-white">
           <div className="py-16 w-4/5 mx-auto ">
             <p className="text-center text-2xl italic text-[#C84869]">
               “Life mein jitna bhi try karo, kuch na kuch toh chootega hi.
@@ -54,10 +54,10 @@ const Home = () => {
         <div className="flex">
           <div className="w-[40%] bg-blue-700 flex flex-col items-center py-40 ">
             <h1 className="text-center text-4xl md:text-6xl font-bold  text-white font-poppins ">
-              LET'S FIND YOUR TRAVEL BUDDY!!!
+              FIND YOUR TRAVEL BUDDY!
             </h1>
-            <button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg rounded-full mt-8 hover:bg-red-900 ">
-              Read more
+            <button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg  mt-8 hover:bg-red-900 ">
+              EXPLORE
             </button>
           </div>
           <div className="w-[60%] bg-cover">

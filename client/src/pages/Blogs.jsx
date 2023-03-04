@@ -4,7 +4,7 @@ import axios from "axios";
 import { motion, useAnimationControls, useScroll } from "framer-motion";
 import { TailSpin, Tailspin } from "react-loader-spinner";
 
-const Blog = () => {
+const Blogs = () => {
   const [data, setData] = useState([]);
   const [scale, setscale] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -117,4 +117,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blogs;
