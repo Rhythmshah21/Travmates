@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-// import Button from "./Button";
+import { Button } from "@mui/material";
+
 
 const Nav = () => {
   const links = [
     { id: 1, name: "HOME", link: "/" },
     { id: 2, name: "EXPLORE", link: "/explore" },
     { id: 3, name: "ABOUT", link: "/about" },
-    { id: 4, name: "BLOG'S", link: "/blogs" },
-    { id: 5, name: "CONTACT ", link: "/contact" },
+    { id: 4, name: "BLOG'S", link: "/blog" },
+    { id: 5, name: "INFO ", link: "/travelinfo" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -40,9 +41,9 @@ const Nav = () => {
                   {item.name}
                 </a>
               </li>
-            ))}
-            <li>
-      
+            ))} 
+            <li className=" mx-4">
+              <Button><p className=" bg-blue-600 text-white text-xl px-2 rounded">Login</p></Button>
             </li>
           </ul>
         </div>
