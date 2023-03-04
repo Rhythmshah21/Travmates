@@ -4,11 +4,11 @@ import { Button } from "@mui/material";
 
 const Nav = () => {
   const links = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Explore", link: "/explore" },
-    { id: 3, name: "About", link: "/about" },
-    { id: 4, name: "Blogs", link: "/blog" },
-    { id: 5, name: "Info ", link: "/travelinfo" },
+    { id: 1, name: "HOME", link: "/" },
+    { id: 2, name: "EXPLORE", link: "/explore" },
+    { id: 3, name: "ABOUT", link: "/about" },
+    { id: 4, name: "BLOG'S", link: "/blogs" },
+    { id: 5, name: "INFO ", link: "/travelinfo" },
   ];
   let [open, setOpen] = useState(false);
   return (
