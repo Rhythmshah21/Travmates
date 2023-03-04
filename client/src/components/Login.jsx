@@ -57,11 +57,11 @@ const Login = () => {
     setLoading(false);
   }
   return (
-    <div className="w-full flex flex-col items-center my-32">
-      <h1 className="font-montserrat font-bold  text-2xl">Login</h1>
-      <div class="p-2 w-full md:w-1/3">
-        <div class="relative">
-          <label for="email" class="leading-7 text-md text-black">
+    <div className="w-[40%] mx-auto flex flex-col items-center my-32 py-32 rounded-3xl bg-dark">
+      <h1 className="font-playfair text-mint font-extrabold text-4xl">Login</h1>
+      <div class="p-2 w-full md:w-3/5 ">
+        <div class="relative py-2 my-3">
+          <label for="mobile" className="text-xl font-medium text-primary ">
             MobileNo
           </label>
           <input
@@ -74,9 +74,9 @@ const Login = () => {
           />
         </div>
       </div>
-      <div class="p-2 w-full md:w-1/3">
+      <div class="p-2 w-full md:w-3/5">
         <div class="relative">
-          <label for="email" class="leading-7 text-lg text-black">
+          <label for="password" className="text-xl font-medium text-primary">
             Password
           </label>
           <input
@@ -92,16 +92,16 @@ const Login = () => {
       <div class="p-2 w-1/3 my-2">
         <button
         onClick={login}
-        class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg"
+        class="flex mx-auto text-secondary bg-mint border-0 py-2 px-8 focus:outline-none hover:bg-secondary/60 hover:text-mint font-medium rounded text-lg"
         >
           {Loading ? <TailSpin height={25} color="white" /> : "Login"}
         </button>
       </div>
-      <div>
+      <div className="text-lg">
         <p>
           Do not have account?
           <Link to={"/register"}>
-            <span className="text-blue-500 ml-2 font-montserrat">Sign Up</span>
+            <span className="text-primary ml-2 font-montserrat">Sign Up</span>
           </Link>
         </p>
       </div>
