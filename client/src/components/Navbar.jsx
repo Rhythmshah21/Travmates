@@ -4,10 +4,10 @@ import React, { useState } from "react";
 const Nav = () => {
   const links = [
     { id: 1, name: "HOME", link: "/" },
-    { id: 2, name: "EXPLORE", link: "/" },
-    { id: 3, name: "ABOUT", link: "/" },
-    { id: 4, name: "BLOG'S", link: "/" },
-    { id: 5, name: "CONTACT ", link: "/" },
+    { id: 2, name: "EXPLORE", link: "/explore" },
+    { id: 3, name: "ABOUT", link: "/about" },
+    { id: 4, name: "BLOG'S", link: "/blogs" },
+    { id: 5, name: "CONTACT ", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
   return (
