@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    LastName: {
+    lastName: {
         type: String,
         required: true
     },
@@ -14,11 +14,11 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     age: {
-        type: Number,
+        type: String,
         required: true
     },
     date: {
-        type: Number,
+        type: String,
         required: true
     },
     city: {
@@ -39,6 +39,6 @@ const userSchema = new mongoose.Schema({
     },
 })
 
-const User = mongoose.model('PROFILE',userSchema)
+const User = mongoose.model('User',userSchema)
 
 module.exports = User;
