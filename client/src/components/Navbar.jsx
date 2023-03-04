@@ -8,7 +8,7 @@ const Nav = () => {
     { id: 2, name: "EXPLORE", link: "/" },
     { id: 3, name: "ABOUT", link: "/" },
     { id: 4, name: "BLOG'S", link: "/" },
-    { id: 5, name: "CONTACT ", link: "/" },
+    { id: 5, name: "Info ", link: "/" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -44,9 +44,9 @@ const Nav = () => {
                   {item.name}
                 </a>
               </li>
-            ))}
-            <li>
-              <Button><p className="bg-blue-600 text-white text-xl px-2 mx-4 rounded">Login</p></Button>
+            ))} 
+            <li className=" mx-4">
+              <Button><p className=" bg-blue-600 text-white text-xl px-2 rounded">Login</p></Button>
             </li>
           </ul>
         </div>
