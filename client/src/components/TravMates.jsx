@@ -1,6 +1,9 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
+
 
 const TravMates = () => {
+  const {id} = useParams();
   return (
     <div className="w-4/5 mx-auto">
     <div className="text-center pt-44 pb-16 ">
@@ -16,7 +19,7 @@ const TravMates = () => {
         <p className="pt-2">The Pink City, Rajasthan</p>
         </div>
         <div className="pt-4">
-        <button class="bg-black text-white w-36 h-12 rounded-2xl mt-8 hover:bg-red-900 font-poppins">Find Mates</button>
+       <Link to={`/attraction/${id}`}> <button class="bg-black text-white w-36 h-12 rounded-2xl mt-8 hover:bg-red-900 font-poppins">Find Mates</button></Link>
         </div>
         
     </div>

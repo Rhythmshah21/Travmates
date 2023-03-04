@@ -1,25 +1,33 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "@mui/material";
-
+import { Link } from "react-router-dom";
+import { Appstate } from "../App";
 
 const Nav = () => {
   const links = [
     { id: 1, name: "HOME", link: "/" },
     { id: 2, name: "EXPLORE", link: "/explore" },
     { id: 3, name: "ABOUT", link: "/about" },
-    { id: 4, name: "BLOG'S", link: "/blogs" },
-    { id: 5, name: "INFO ", link: "/userinfo" },
+    { id: 4, name: "BLOGS", link: "/blogs" },
+    // { id: 5, name: "INFO ", link: "/userinfo" },
   ];
   let [open, setOpen] = useState(false);
+  const useAppstate = useContext(Appstate);
+
+  const Handleclick = () => {
+    
+          useAppstate.setLogin(false)
+    
+  }
   return (
     <>
-      <div className="shadow-md w-full font-montserrat fixed bg-[#0000009E]  top-0 left-0 z-10  ">
+      <div className="shadow-md w-full font-montserrat bg-dark top-0 left-0 z-10 sticky">
         <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
           <div className="font-light text-white text-2xl cursor-pointer flex items-center font-[Poppins] ">
-            <span className="text-3xl text-white font-playfair mr-1 pt-2">
-              <ion-icon name="logo-ionic" className="text-white"></ion-icon>
+            <span className="text-3xl text-white font-playfair mr-4 pt-2 align-middle">
+              <ion-icon name="logo-ionic" className="text-white align-middle"></ion-icon>
             </span>
-            TRAVMATE
+            <p className="text-mint font-playfair text-3xl tracking-wide font-semibold">TravMate</p>
           </div>
           <div
             onClick={() => setOpen(!open)}
@@ -33,18 +41,50 @@ const Nav = () => {
             } md:opacity-100 opacity-0 `}
           >
             {links.map((item) => (
-              <li key={item.name} className="md:ml-8 text-xl md:my-0 my-7 hover:scale-110 transition duration-300 ease-in-out ">
+              <li
+                key={item.name}
+                className="md:ml-8 text-xl md:my-0 my-7 hover:scale-110 transition duration-300 ease-in-out "
+              >
                 <a
                   href={item.link}
-                  className="text-white font-poppins hover:text-[#213E8C] "
+                  className="text-primary font-poppins hover:text-white "
                 >
                   {item.name}
                 </a>
               </li>
-            ))} 
-            <li className=" mx-4">
-              <Button><p className="normal-case  text-white text-xl px-2">Login</p></Button>
-            </li>
+            ))}
+            {useAppstate.login ? (
+              <div className="flex">
+                <li className=" mx-2">
+                  <Link to={"/userinfo"}>
+                    <Button>
+                      <p className="normal-case font-poppins text-secondary bg-mint rounded-md text-xl px-4 py-2">
+                        INFO
+                      </p>
+                    </Button>
+                  </Link>
+                </li>
+                <li className="">
+                  <button onClick={Handleclick}>
+
+                    <p className="text-white font-poppins hover:text-[#213E8C]  text-xl md:my-2 my-7 hover:scale-110 transition duration-300 ease-in-out ">
+                      LOGOUT
+                    </p>
+                  </button>
+                  
+                </li>
+              </div>
+            ) : (
+              <li className="">
+                <Link to={"/login"}>
+                  <Button>
+                    <p className="normal-case  text-white text-xl px-3">
+                      LOGIN
+                    </p>
+                  </Button>
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>

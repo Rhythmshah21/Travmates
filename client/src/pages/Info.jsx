@@ -56,7 +56,7 @@ const Info = () => {
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-4">
-            <h1 className="sm:text-3xl text-xl font-medium title-font mb-4 text-red-600">
+            <h1 className="sm:text-3xl text-xl font-medium  mb-4 text-red-600">
               INFO
             </h1>
           </div>
