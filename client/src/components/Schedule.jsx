@@ -12,7 +12,8 @@ const Schedule = () => {
   const {title} = useParams();
   const [value, setValue] = useState(dayjs("2022-04-17"));
   return (
-    <div className=" mx-auto relative">
+    <div className=' mx-auto relative ' >
+      
       <div>
         <img
           className="absolute w-full h-screen"

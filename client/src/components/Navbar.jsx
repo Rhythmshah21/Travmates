@@ -8,7 +8,8 @@ const Nav = () => {
     { id: 1, name: "HOME", link: "/" },
     { id: 2, name: "EXPLORE", link: "/explore" },
     { id: 3, name: "ABOUT", link: "/about" },
-    { id: 4, name: "BLOG'S", link: "/blogs" },
+    { id: 4, name: "BLOGS", link: "/blogs" },
+    // { id: 5, name: "INFO ", link: "/userinfo" },
   ];
   let [open, setOpen] = useState(false);
   const useAppstate = useContext(Appstate);
@@ -20,13 +21,13 @@ const Nav = () => {
   }
   return (
     <>
-      <div className="shadow-md w-full font-montserrat absolute bg-[#0000009E]  top-0 left-0 z-10  ">
+      <div className="shadow-md w-full font-montserrat bg-dark top-0 left-0 z-10 sticky">
         <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
           <div className="font-light text-white text-2xl cursor-pointer flex items-center font-[Poppins] ">
-            <span className="text-3xl text-white font-playfair mr-1 pt-2">
-              <ion-icon name="logo-ionic" className="text-white"></ion-icon>
+            <span className="text-3xl text-white font-playfair mr-4 pt-2 align-middle">
+              <ion-icon name="logo-ionic" className="text-white align-middle"></ion-icon>
             </span>
-            TRAVMATE
+            <p className="text-mint font-playfair text-3xl tracking-wide font-semibold">TravMate</p>
           </div>
           <div
             onClick={() => setOpen(!open)}
@@ -46,7 +47,7 @@ const Nav = () => {
               >
                 <a
                   href={item.link}
-                  className="text-white font-poppins hover:text-[#213E8C] "
+                  className="text-primary font-poppins hover:text-white "
                 >
                   {item.name}
                 </a>
@@ -57,7 +58,7 @@ const Nav = () => {
                 <li className=" mx-2">
                   <Link to={"/userinfo"}>
                     <Button>
-                      <p className="normal-case  text-white text-xl px-2">
+                      <p className="normal-case font-poppins text-secondary bg-mint rounded-md text-xl px-4 py-2">
                         INFO
                       </p>
                     </Button>
