@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Button} from "@mui/icons-material"
+import { Button } from "@mui/material";
 
 
 const Nav = () => {
