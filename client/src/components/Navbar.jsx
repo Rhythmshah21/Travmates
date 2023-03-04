@@ -14,11 +14,11 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   const useAppstate = useContext(Appstate);
 
-  const Handleclick = () => {
+  // const Handleclick = () => {
     
-          useAppstate.setLogin(false)
+  //     useAppstate.setLogin(false)
     
-  }
+  // }
   return (
     <>
       <div className="shadow-md w-full font-montserrat bg-dark top-0 left-0 z-10 sticky">
@@ -65,12 +65,6 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className="">
-                  <button onClick={Handleclick}>
-
-                    <p className="text-white font-poppins hover:text-[#213E8C]  text-xl md:my-2 my-7 hover:scale-110 transition duration-300 ease-in-out ">
-                      LOGOUT
-                    </p>
-                  </button>
                   
                 </li>
               </div>
