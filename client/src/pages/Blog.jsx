@@ -26,20 +26,20 @@ const Blog = () => {
 
   console.log(data);
   return (
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="text-gray-400 bg-gray-900 body-font z-0">
       {loading ? (
         <div className="h-96 flex w-full justify-center items-center bg-gray-900">
           <TailSpin height={40} color="white" />
         </div>
       ) : (
         <>
-          <div class="container px-5 mx-auto">
+          <div class="container px-5 mx-auto gap-y-20">
             <div class="flex flex-wrap justify-center">
               {data.map((data) => {
                 return (
                   <motion.div
                     initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1, y: [300, 0] }}
+                    animate={{ scale: 1, opacity: 1, y: [300,0,0,80] }}
                     transition={{ type: "spring", duration: 2 }}
                     key={data.id}
                     class="p-4 lg:w-1/2"
