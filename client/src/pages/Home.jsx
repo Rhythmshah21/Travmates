@@ -15,10 +15,10 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-3 gap-0">
           <div className="bg-[#C84869] py-8">
-            <p className="text-center text-4xl font-bold  text-white font-poppins">
+            <p className="text-center text-4xl font-semibold  text-white font-playfair">
               CONNECT
             </p>
-            <p className="text-center my-2 mx-auto text-white font-light text-2xl font-montserrat">
+            <p className="text-center my-2 mx-auto text-white italic font-medium text-xl font-playfair tracking-wider">
               Lets connect naaa
             </p>
           </div>
