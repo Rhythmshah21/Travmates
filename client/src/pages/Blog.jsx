@@ -26,7 +26,7 @@ const Blog = () => {
 
   console.log(data);
   return (
-    <section class="text-gray-400 bg-gray-900 body-font z-0">
+    <section class="text-gray-400 bg-gray-900 font-playflair z-0">
       {loading ? (
         <div className="h-96 flex w-full justify-center items-center bg-gray-900">
           <TailSpin height={40} color="white" />
