@@ -54,10 +54,10 @@ const Home = () => {
         <div className="flex">
           <div className="w-[40%] bg-blue-700 flex flex-col items-center py-40 ">
             <h1 className="text-center text-4xl md:text-6xl font-bold  text-white font-poppins ">
-              LET'S FIND YOUR TRAVEL BUDDY!!!
+              FIND YOUR TRAVEL BUDDY!
             </h1>
-            <button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg rounded-full mt-8 hover:bg-red-900 ">
-              Read more
+            <button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg  mt-8 hover:bg-red-900 ">
+              EXPLORE
             </button>
           </div>
           <div className="w-[60%] bg-cover">

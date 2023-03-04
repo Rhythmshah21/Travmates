@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
+import Tours from "./pages/Tours";
 import Info from "./pages/Info";
 import { createContext, useState } from "react";
 import Schedule from "./components/Schedule";
@@ -15,6 +16,7 @@ const Appstate = createContext();
 
 function App() {
   const [login,setLogin] = useState(false);
+  
   return (
     <Router>
       <Navbar />
