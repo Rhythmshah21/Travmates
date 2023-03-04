@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Mates = () => {
+const TravMates = () => {
   return (
     <div>
       mates
@@ -8,4 +8,4 @@ const Mates = () => {
   )
 }
 
-export default Mates
+export default TravMates
