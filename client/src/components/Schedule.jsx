@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const Schedule = () => {
   const [value, setValue] = useState(dayjs('2022-04-17'));
   return (
-    <div className=' mx-auto relative' >
+    <div className=' mx-auto relative ' >
       
       <div>
         <img className='absolute w-full h-screen' src="https://wwwnc.cdc.gov/travel/images/travel-industry-air.jpg"/>
