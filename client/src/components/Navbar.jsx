@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 // import Button from "./Button";
-import { Button } from "@mui/material";
 
 const Nav = () => {
   const links = [
@@ -46,7 +45,7 @@ const Nav = () => {
               </li>
             ))}
             <li>
-              <Button><p className="bg-blue-600 text-white text-xl px-2 mx-4 rounded">Login</p></Button>
+      
             </li>
           </ul>
         </div>
