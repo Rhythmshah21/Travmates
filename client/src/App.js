@@ -6,8 +6,12 @@ import Blog from "./pages/Blog";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
+import { createContext, useState } from "react";
+
+const Appstate = createContext();
 
 function App() {
+  const [login,setLogin] = useState(false);
   return (
     <Router>
       <Navbar />
