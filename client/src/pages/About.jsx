@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import axios from "axios";
+import { useState } from "react";
 
 const About = () => {
-  return (
-    <div className='my-9'>About</div>
-  )
-}
+  const [data, setData] = useState([]);
 
-export default About
+  useEffect(() => {
+    axios
+      .get(
+        "https://jsonplaceholder.typicode.com/users"
+      )
+      .then(data=>{
+        setData(data);
+        console.log(data);
+      })
+  }, []);
+
+  return <div className="my-9"></div>;
+};
+
+export default About;
