@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
+import Tours from "./pages/Tours";
 import Info from "./pages/Info";
 import { createContext, useState } from "react";
 import Schedule from "./components/Schedule";
@@ -15,6 +16,7 @@ const Appstate = createContext();
 
 function App() {
   const [login,setLogin] = useState(false);
+  
   return (
     <Router>
       <Navbar />
@@ -24,9 +26,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/travmates" element={<TravMates />} />
-        <Route path="/attraction" element={<TouristAttraction />} />
+        <Route path="/schedule/:id" element={<Schedule />} />
+        <Route path="/travmates/:id" element={<TravMates />} />
+        <Route path="/attraction/:id" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
       </Routes>
       <Footer />
