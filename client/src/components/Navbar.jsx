@@ -8,7 +8,7 @@ const Nav = () => {
     { id: 2, name: "EXPLORE", link: "/explore" },
     { id: 3, name: "ABOUT", link: "/about" },
     { id: 4, name: "BLOG'S", link: "/blogs" },
-    { id: 5, name: "INFO ", link: "/travelinfo" },
+    { id: 5, name: "INFO ", link: "/userinfo" },
   ];
   let [open, setOpen] = useState(false);
   return (

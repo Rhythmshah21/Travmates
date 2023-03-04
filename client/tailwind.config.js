@@ -6,11 +6,9 @@ module.exports = {
       fontFamily: {
         playfair :["Playfair Display","sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-
-        
+        montserrat: ["Montserrat", "sans-serif"],        
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
