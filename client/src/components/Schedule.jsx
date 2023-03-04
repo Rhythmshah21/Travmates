@@ -41,9 +41,9 @@ const Schedule = () => {
   </LocalizationProvider>
   </div>
   <div className='ml-20 relative'>
-  <button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg  mt-8 hover:bg-red-900 ">
+  <Link to={"/travmates"}><button class="bg-red-600 text-white py-3 md:py-4 px-7 md:px-10 text-lg  mt-8 hover:bg-red-900 ">
               FIND MATES
-            </button>
+            </button></Link>
   </div>
   </div>
 
