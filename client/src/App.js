@@ -9,15 +9,15 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Router>
-      <Navbar/>
-      
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/explore" element={<Explore />} />
-        </Routes>
-      <Footer/>
+      <Navbar />
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/explore" element={<Explore />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }
