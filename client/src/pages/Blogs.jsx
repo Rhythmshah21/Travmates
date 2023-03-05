@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
-import axios from "axios";
-import { motion, useAnimationControls, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { TailSpin, Tailspin } from "react-loader-spinner";
+import { Appstate } from "../App";
+import { useNavigate } from "react-router-dom";
 
 const Blogs = () => {
   const [data, setData] = useState([]);
-  const [scale, setscale] = useState(false);
+  // const [scale, setscale] = useState(false);
   const [loading, setLoading] = useState(false);
+  const useAppstate = useContext(Appstate);
+  const navigate = useNavigate();
  
   const blogs = [
     {
@@ -60,6 +63,7 @@ const Blogs = () => {
         </div>
       ) : (
         <>
+{useAppstate ?
           <div class="container px-5 mx-auto gap-y-20">
             <div class="flex flex-wrap justify-center">
               {blogs.map((blogs) => {
@@ -95,7 +99,7 @@ const Blogs = () => {
                           fill="none"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                        >
+                          >
                           <path d="M5 12h14"></path>
                           <path d="M12 5l7 7-7 7"></path>
                         </svg>
@@ -137,6 +141,9 @@ const Blogs = () => {
               })}
             </div>
           </div>
+           : 
+                navigate("/login")
+            }
         </>
       )}
     </section>
