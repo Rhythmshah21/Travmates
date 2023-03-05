@@ -23,9 +23,14 @@ const TravMates = () => {
         </div>
         
     </div>
+    
     <div className="h-0.5  bg-gray-300 mt-12">
          </div>
+         <button class="w-full bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg mt-8 hover:bg-blue-800 font-montserrat font-semibold hover:text-mint">
+              FAMOUS TOURIST SPOTS
+            </button>
     </div>
+    
   );
 };
 
