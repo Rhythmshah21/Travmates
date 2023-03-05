@@ -1,5 +1,7 @@
 import React from "react";
 import {motion} from 'framer-motion';
+import {Link} from "react-router-dom"
+
 
 
 const Home = () => {
@@ -7,7 +9,7 @@ const Home = () => {
     <div className="">
       <div className="  ">
         <div  className="h-screen flex justify-center items-center bg-bgphoto bg-fixed bg-cover">
-          <motion.p initial={{scale: 0}} animate={{scale:1 , y:[0,-200]}} transition={{type:'tween', duration:2}} className=" text-secondary md:text-8xl lg:text-9xl text-5xl text-center top-2/3 mt-[400px] w-full font-bold font-playfair">
+          <motion.p initial={{scale: 0}} animate={{scale:1 , y:[0,20]}} transition={{type:'tween', duration:2}} className=" text-secondary md:text-8xl lg:text-9xl text-5xl text-center top-2/3 mt-[400px] w-full font-bold font-playfair">
             LET'S TRAVEL!
           </motion.p>
         </div>
@@ -31,7 +33,7 @@ const Home = () => {
             </p>
           </div>
           <div className="bg-[#213E8C] py-8">
-            <p className="text-center text-2xl md:text-4xl font-bold  text-white font-playfair">
+           <p className="text-center text-2xl md:text-4xl font-bold  text-white font-playfair">
               EXPLORE
             </p>
             <p className="text-center my-2 mx-auto text-white font-light text-xl md:text-2xl font-poppins">
@@ -51,9 +53,9 @@ const Home = () => {
             <h1 className="text-center text-3xl md:text-5xl font-bold  text-mint font-poppins p-3">
               FIND YOUR TRAVEL BUDDY!
             </h1>
-            <button class="bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg rounded-full mt-8 hover:bg-dark font-montserrat font-semibold hover:text-mint">
+            <Link to = {"/explore"}>  <button class="bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg rounded-full mt-8 hover:bg-dark font-montserrat font-semibold hover:text-mint">
               EXPLORE
-            </button>
+            </button></Link>
           </div>
           <div className="w-[60%] bg-cover">
             <img
