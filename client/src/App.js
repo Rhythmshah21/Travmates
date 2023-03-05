@@ -12,6 +12,9 @@ import TravMates from "./components/TravMates";
 import TouristAttraction from "./components/TouristAttraction";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Kanban from "./pages/Kanban";
+import Calendar from "./components/Calendar";
+import Chat from "./components/Chat";
 
 const Appstate = createContext();
 
@@ -31,8 +34,11 @@ function App() {
         <Route  path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/kanban" element={<Kanban />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/schedule/:id" element={<Schedule/>} />
+        <Route path="/chat" element={<Chat/>} />
         <Route path="/travmates/:id" element={<TravMates />} />
         <Route path="/attraction/:id" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />

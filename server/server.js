@@ -3,11 +3,12 @@ const dotenv = require("dotenv");
 const blogRoutes=require('./routes/blogRoutes')
 const userRoutes = require('./routes/userRoutes')
 const connectDB = require("./config/db");
+const cors = require('cors')
 const app =express();
 dotenv.config();
 connectDB();
 app.use(express.json());
-
+app.use(cors());
 const PORT = 3001 || 3002;
 app.listen(PORT, console.log(`server started on port ${PORT}`));
 app.use(express.json());

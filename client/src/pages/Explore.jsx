@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import data from "./../Data.js";
 import { Button } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 
 const Explore = () => {
   const {id} =useParams();
   const {title} =useParams();
+  const [interested, setInteresed] = useState(false);
+  const handleInterest = () => {
+    setInteresed((current) => !current);
+  };
+  useEffect(() => {
+    if (interested) {
+      axios.post('/api/users')
+      .then(() => {
+        console.log('Updated stats successfully.')
+      });
+    }
+  }, [interested]);
+
   return (
     <div className="w-4/5 mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">
       {data.map((e) => {
@@ -20,7 +34,7 @@ const Explore = () => {
                 <p className="px-4 py-1 text-lg">{e.description}</p>
                 <Button variant="secondary" >
                   <Link to={`/schedule/${e.id}`}>
-                  <p className="normal-case  text-secondary font-bold bg-mint py-2 px-4 rounded text-xl hover:scale-110">
+                  <p className="normal-case  text-secondary font-bold bg-mint py-2 px-4 rounded text-xl hover:scale-110" onClick={handleInterest}>
                     Learn More
                   </p>
                 </Link>
