@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='text-poppins mx-auto'>
+    <div className='text-poppins mx-auto sticky'>
       <footer className="footer p-10 bg-dark text-base-content text-center">
   
   <div className='md:mx-auto'>

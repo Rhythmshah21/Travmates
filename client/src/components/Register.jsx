@@ -97,13 +97,13 @@ const Register = () => {
   };
 
   return (
-    <div className="w-full flex flex-col my-32 items-center ">
-      <h1 className="font-montserrat font-bold  text-2xl">Sign Up</h1>
+    <div className="w-[40%] mx-auto flex flex-col items-center my-32 py-32 rounded-3xl bg-dark">
+      <h1 className="font-playfair text-mint font-extrabold text-4xl">Sign Up</h1>
       {sentOtp ? (
         <>
-          <div class="p-2 w-full md:w-1/3">
+          <div class="p-2 w-full md:w-3/5">
             <div class="relative">
-              <label class="leading-7 text-lg text-black">Enter OTP</label>
+              <label class="text-xl font-medium text-primary ">Enter OTP</label>
               <input
                 id=""
                 value={Otp}
@@ -123,9 +123,9 @@ const Register = () => {
         </>
       ) : (
         <>
-          <div class="p-2 w-full md:w-1/3">
-            <div class="relative">
-              <label  class="leading-7 text-md text-black">
+          <div class="p-2 w-full md:w-3/5">
+            <div class="relative my-3 p-2">
+              <label  class="text-xl font-medium text-primary ">
                 MobileNo
               </label>
               <input
@@ -138,9 +138,9 @@ const Register = () => {
               />
             </div>
           </div>
-          <div class="p-2 w-full md:w-1/3">
+          <div class="p-2 w-full md:w-3/5">
             <div class="relative">
-              <label for="email" class="leading-7 text-lg text-black">
+              <label for="email" class="text-xl font-medium text-primary ">
                 Password
               </label>
               <input
@@ -153,10 +153,10 @@ const Register = () => {
               />
             </div>
           </div>
-          <div class="p-2 w-1/3 my-2">
+          <div class="p-2 w-3/5 my-2">
             <button
               onClick={requestOtp}
-              class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg"
+              class="flex mx-auto text-secondary bg-mint border-0 py-2 px-8 focus:outline-none hover:bg-secondary/60 hover:text-mint font-medium rounded text-lg"
             >
               {Loading ? (
                 <TailSpin height={25} color="white" />
@@ -168,10 +168,10 @@ const Register = () => {
         </>
       )}
       <div>
-        <p>
+        <p className="text-lg">
           Already have an account?!
           <Link to={"/login"}>
-            <span className="text-blue-500 ml-2 font-montserrat">Login </span>
+            <span className="text-primary ml-2 font-montserrat">Login </span>
           </Link>
         </p>
       </div>

@@ -72,7 +72,7 @@ const Nav = () => {
               <li className="">
                 <Link to={"/login"}>
                   <Button>
-                    <p className="normal-case  text-white text-xl px-3">
+                    <p className="normal-case  text-dark bg-mint rounded-md py-2 text-xl px-4 font-poppins">
                       LOGIN
                     </p>
                   </Button>
