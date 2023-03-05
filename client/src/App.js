@@ -15,6 +15,10 @@ import Register from "./components/Register";
 import Kanban from "./pages/Kanban";
 import Calendar from "./components/Calendar";
 import Chat from "./components/Chat";
+import ChatRoom from "./pages/ChatRoom";
+
+// 
+// import Chatbot from "./pages/Chatbot";
 
 const Appstate = createContext();
 
@@ -27,6 +31,7 @@ function App() {
 
     <Router>
       <Navbar />
+
       
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -42,6 +47,9 @@ function App() {
         <Route path="/travmates/:id" element={<TravMates />} />
         <Route path="/attraction/:id" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
+        {/* <Route path="/chatRoom" element={<PrivateRoute> <ChatRoom /> </PrivateRoute>} /> */}
+
+        
       </Routes>
       <Footer />
     </Router>

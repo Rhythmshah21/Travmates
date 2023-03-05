@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 const Explore = () => {
-  const {id} =useParams();
+  // const {id} =useParams();
   const {title} =useParams();
   const [interested, setInteresed] = useState(false);
   const handleInterest = () => {

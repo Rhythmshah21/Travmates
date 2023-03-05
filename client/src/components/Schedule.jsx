@@ -8,7 +8,7 @@ import { Link, useParams } from "react-router-dom";
 import data from "./../Data.js";
 
 const Schedule = () => {
-  const {id} = useParams();
+  // const {id} = useParams();
   const {title} = useParams();
   const [value, setValue] = useState(dayjs("2022-04-17"));
   return (
@@ -53,7 +53,7 @@ const Schedule = () => {
           </LocalizationProvider>
         </div>
         <div className="ml-20 relative">
-          <Link to={`/travmates/${id}`}>
+          <Link to={`/travmates/${title}`}>
             <button class="my-5 hover:text-secondary text-2xl bg-mint border-0 py-3 px-8 focus:outline-none bg-secondary/60 text-mint font-medium rounded">
               FIND MATES
             </button>

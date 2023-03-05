@@ -16,10 +16,10 @@ const TravMates = () => {
   console.log('User_Profile',profile);
 
   return (
-    <div className="w-4/5 mx-auto py-16">
-    <div className="text-center py-16 ">
-      <h1 className="text-6xl text-dark font-playfair font-semibold">
-        <b>Find Your TravMates</b>
+    <div className="w-4/5 mx-auto">
+    <div className="text-center pt-44 pb-16 ">
+      <h1 className="text-4xl">
+        <b>TRAVEL BUDDIES</b>
       </h1>
     </div>
     
@@ -46,7 +46,13 @@ const TravMates = () => {
     <div className="h-0.5  bg-dark/30 mt-12">
     </div>
     
+    <div className="h-0.5  bg-gray-300 mt-12">
+         </div>
+         <button class="w-full bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg mt-8 hover:bg-blue-800 font-montserrat font-semibold hover:text-mint">
+              FAMOUS TOURIST SPOTS
+            </button>
     </div>
+    
   );
 };
 

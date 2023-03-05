@@ -1,10 +1,10 @@
 import { getDocs, query, where } from "firebase/firestore";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-
+import { UserAuth } from "../context/AuthContext";
 import bcrypt from "bcryptjs";
 import { Appstate } from "../App";
 import { UsersRef } from "../firebase/firebase";
@@ -17,10 +17,11 @@ const Login = () => {
     mobile: "",
     password: "",
   });
-
+  // const { currentUser, signinWithGoogle } = UserAuth();
   const login = async () => {
     setLoading(true);
     try {
+      // await signinWithGoogle();
       const queryy = query(UsersRef, where('mobile', '==', form.mobile))
       const querySnapshot = await getDocs(queryy);
 
@@ -56,6 +57,13 @@ const Login = () => {
     }
     setLoading(false);
   }
+
+  // useEffect(() => {
+  //   if(currentUser) {
+  //     navigate("/chat")
+  //   }
+  // }, [currentUser]);
+
   return (
     <div className="w-[40%] mx-auto flex flex-col items-center my-32 py-32 rounded-3xl bg-dark">
       <h1 className="font-playfair text-mint font-extrabold text-4xl">Login</h1>

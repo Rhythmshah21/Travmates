@@ -22,6 +22,7 @@ const Register = () => {
   const [form, setForm] = useState({
     mobile: "",
     password: "",
+    name:"",
   });
   const [Loading, setLoading] = useState(false);
   const [sentOtp, setsentOtp] = useState(false);
@@ -93,6 +94,7 @@ const Register = () => {
     await addDoc(UsersRef, {
       password: hash,
       mobile: form.mobile,
+      name:form.name,
     });
   };
 
@@ -101,6 +103,7 @@ const Register = () => {
       <h1 className="font-playfair text-mint font-extrabold text-4xl">Sign Up</h1>
       {sentOtp ? (
         <>
+        
           <div class="p-2 w-full md:w-3/5">
             <div class="relative">
               <label class="text-xl font-medium text-primary ">Enter OTP</label>
@@ -123,6 +126,21 @@ const Register = () => {
         </>
       ) : (
         <>
+        <div class="p-2 w-full md:w-3/5">
+            <div class="relative my-3 p-2">
+              <label  class="text-xl font-medium text-primary ">
+                Username
+              </label>
+              <input
+                type={"text"}
+                id=""
+                name=""
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                class="w-full bg-gray-300  rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-sm shadow-white"
+              />
+            </div>
+          </div>
           <div class="p-2 w-full md:w-3/5">
             <div class="relative my-3 p-2">
               <label  class="text-xl font-medium text-primary ">

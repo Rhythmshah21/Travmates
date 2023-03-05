@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Appstate } from "../App";
 
+
 const Nav = () => {
   const links = [
     { id: 1, name: "Home", link: "/" },
@@ -16,20 +17,20 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   const useAppstate = useContext(Appstate);
 
-  // const Handleclick = () => {
-    
-  //     useAppstate.setLogin(false)
-    
-  // }
   return (
     <>
       <div className="shadow-md w-full font-montserrat bg-dark top-0 left-0 z-10 sticky">
         <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
           <div className="font-light text-white text-2xl cursor-pointer flex items-center font-[Poppins] ">
             <span className="text-3xl text-white font-playfair mr-4 pt-2 align-middle">
-              <ion-icon name="logo-ionic" className="text-white align-middle"></ion-icon>
+              <ion-icon
+                name="logo-ionic"
+                className="text-white align-middle"
+              ></ion-icon>
             </span>
-            <p className="text-mint font-playfair text-3xl tracking-wide font-semibold">TravMate</p>
+            <p className="text-mint font-playfair text-3xl tracking-wide font-semibold">
+              TravMate
+            </p>
           </div>
           <div
             onClick={() => setOpen(!open)}
@@ -37,6 +38,7 @@ const Nav = () => {
           >
             <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
+
           <ul
             className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ${
               open ? "top-20 opacity-100" : "top-[-490px]"
