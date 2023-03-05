@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 
 const Explore = () => {
-  const {id} =useParams();
+  // const {id} =useParams();
   const {title} =useParams();
   return (
     <div className="w-4/5 mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">
@@ -19,7 +19,7 @@ const Explore = () => {
                 <div className="w-24 h-1 bg-mint mx-4 mt-1 rounded-md"/>
                 <p className="px-4 py-1 text-lg">{e.description}</p>
                 <Button variant="secondary" >
-                  <Link to={`/schedule/${e.id}`}>
+                  <Link to={`/schedule/${e.title}`}>
                   <p className="normal-case  text-secondary font-bold bg-mint py-2 px-4 rounded text-xl hover:scale-110">
                     Learn More
                   </p>
