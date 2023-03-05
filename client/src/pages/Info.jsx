@@ -40,12 +40,21 @@ const Info = () => {
     });
     const data = await res.json();
     if(data.status === 400 || !data){
-      window.alert("profile not added ");
-      console.log("profile not added ")
+      swal({
+        title: "Profile not Added",
+        icon: "error",
+        buttons: false,
+        timer: 3000
+      })
+      
     }
     else {
-      window.alert("profile created");
-      console.log("profile created");
+      swal({
+        title: "Profile Added",
+        icon: "Success",
+        buttons: false,
+        timer: 3000
+      })
       navigate("/explore");
     }
   }

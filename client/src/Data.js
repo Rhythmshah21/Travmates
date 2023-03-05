@@ -10,22 +10,22 @@
           Tid:1,
           Title:"Statue of Liberty",
           Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
-          image: "/Images/StatueofLiberty.",
+          Image: "/Images/StatueofLiberty.",
           },
           {
-          Tid:1,
+          Tid:2,
           Title:"Statue of Liberty",
           Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
           image: "/Images/StatueofLiberty.",
           },
           {
-            Tid:1,
-            Title:"Statue of Liberty",
-            Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
-            image: "/Images/StatueofLiberty.",
-            },
-
+          Tid:3,
+          Title:"Statue of Liberty",
+          Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
+          image: "/Images/StatueofLiberty.",
+          },
         ]
+        
       },
       {
         id:2,
