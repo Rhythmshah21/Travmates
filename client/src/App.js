@@ -42,10 +42,9 @@ function App() {
         <Route path="/kanban" element={<Kanban />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/schedule/:id" element={<Schedule/>} />
-        <Route path="/chat" element={<Chat/>} />
-        <Route path="/travmates/:id" element={<TravMates />} />
-        <Route path="/attraction/:id" element={<TouristAttraction />} />
+        <Route path="/schedule/:title" element={<Schedule/>} />
+        <Route path="/travmates/:title" element={<TravMates />} />
+        <Route path="/attraction/:Tourist_locations" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
         {/* <Route path="/chatRoom" element={<PrivateRoute> <ChatRoom /> </PrivateRoute>} /> */}
 
