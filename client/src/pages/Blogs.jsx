@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
-
 import { motion } from "framer-motion";
 import { TailSpin, Tailspin } from "react-loader-spinner";
 import { Appstate } from "../App";

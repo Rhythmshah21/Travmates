@@ -37,7 +37,7 @@ function App() {
         <Route path="/travmates/:id" element={<TravMates />} />
         <Route path="/attraction/:id" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
-        <Route path="/chatbot" element={<Chatbot />} />
+        
       </Routes>
       <Footer />
     </Router>
