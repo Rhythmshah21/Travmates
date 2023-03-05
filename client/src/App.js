@@ -12,6 +12,7 @@ import TravMates from "./components/TravMates";
 import TouristAttraction from "./components/TouristAttraction";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Chatbot from "./pages/Chatbot";
 
 const Appstate = createContext();
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/travmates/:id" element={<TravMates />} />
         <Route path="/attraction/:id" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
+        <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
       <Footer />
     </Router>
