@@ -5,6 +5,27 @@ const data =[
         title: "New York",
         description: "New York City is the most populous city in the United States and one of the world's most popular destinations.",
         image: "/Images/Newyork.jpg",
+        Tourist_locations : [
+          {
+          Tid:1,
+          Title:"Statue of Liberty",
+          Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
+          image: "/Images/StatueofLiberty.",
+          },
+          {
+          Tid:1,
+          Title:"Statue of Liberty",
+          Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
+          image: "/Images/StatueofLiberty.",
+          },
+          {
+            Tid:1,
+            Title:"Statue of Liberty",
+            Desc:"One of the most iconic landmarks in the world, the Statue of Liberty stands tall on Liberty Island in New York Harbor.",
+            image: "/Images/StatueofLiberty.",
+            },
+
+        ]
       },
       {
         id:2,

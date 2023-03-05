@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useParams } from 'react-router-dom';
 
 const TouristAttraction = () => {
-  const { id } = useParams();
+  const { title } = useParams();
   return (
     <div className="max-w-[1640px] mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">
       {data.map((e) => {
@@ -15,8 +15,8 @@ const TouristAttraction = () => {
             <div className="rounded-xl flex flex-col justify-end w-full relative">
               {/* Overlay */}
               <div className="absolute w-3/5 h-1/2 bg-black opacity-90 rounded-xl text-white">
-                <p className="font-bold text-2xl px-4 pt-4">{e.title}</p>
-                <p className="px-4 py-1">{e.description}</p>
+                <p className="font-bold text-2xl px-4 pt-4">{e.Tourist_locations.title}</p>
+                <p className="px-4 py-1">{e.Tourist_locations.Desc}</p>
                 <Button variant="secondary" size="large">
                   <p className="normal-case  text-white bg-red-900 px-2 rounded text-xl">
                     Learn More
