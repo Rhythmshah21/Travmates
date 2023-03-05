@@ -1,5 +1,5 @@
 import React from 'react'
-import data from "./../Data.js";
+import data from "../Data";
 import { Button } from "@mui/material";
 import { useParams } from 'react-router-dom';
 

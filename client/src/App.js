@@ -12,6 +12,9 @@ import TravMates from "./components/TravMates";
 import TouristAttraction from "./components/TouristAttraction";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Kanban from "./pages/Kanban";
+import Calendar from "./components/Calendar";
+import Chat from "./components/Chat";
 import ChatRoom from "./pages/ChatRoom";
 
 // 
@@ -36,6 +39,8 @@ function App() {
         <Route  path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/kanban" element={<Kanban />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/schedule/:title" element={<Schedule/>} />
         <Route path="/travmates/:title" element={<TravMates />} />
