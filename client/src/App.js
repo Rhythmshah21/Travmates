@@ -14,7 +14,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import ChatRoom from "./pages/ChatRoom";
 import { PrivateRoute } from "./Routes/PrivateRoute";
-// import Chatbot from "./pages/Chatbot";
+// 
 
 const Appstate = createContext();
 
