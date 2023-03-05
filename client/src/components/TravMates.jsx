@@ -4,7 +4,7 @@ import data from "../Data";
 
 
 const TravMates = () => {
-  const {title} = useParams();
+  const {Tourist_locations} = useParams();
   return (
     <div className="w-4/5 mx-auto">
     <div className="text-center pt-44 pb-16 ">
@@ -27,7 +27,7 @@ const TravMates = () => {
     
     <div className="h-0.5  bg-gray-300 mt-12">
          </div>
-        <Link to={`/attraction/${title}`}> <button class="w-full bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg mt-8 hover:bg-blue-800 font-montserrat font-semibold hover:text-mint mb-5">
+        <Link to={`/attraction/${Tourist_locations}`}> <button class="w-full bg-mint text-black py-3 md:py-4 px-7 md:px-10 text-lg mt-8 hover:bg-blue-800 font-montserrat font-semibold hover:text-mint mb-5">
               FAMOUS TOURIST SPOTS
             </button></Link>
     </div>

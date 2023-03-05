@@ -39,7 +39,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/schedule/:title" element={<Schedule/>} />
         <Route path="/travmates/:title" element={<TravMates />} />
-        <Route path="/attraction/:title" element={<TouristAttraction />} />
+        <Route path="/attraction/:Tourist_locations" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
         {/* <Route path="/chatRoom" element={<PrivateRoute> <ChatRoom /> </PrivateRoute>} /> */}
 

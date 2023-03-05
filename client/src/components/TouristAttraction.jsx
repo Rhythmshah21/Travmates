@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { useParams } from 'react-router-dom';
 
 const TouristAttraction = () => {
-  const { title } = useParams();
+  const { Tourist_locations } = useParams();
   return (
     <div className="max-w-[1640px] mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">
       {data.map((e) => {
