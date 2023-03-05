@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 
 const Explore = () => {
-  // const {id} =useParams();
+  
   const {title} =useParams();
   return (
     <div className="w-4/5 mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">

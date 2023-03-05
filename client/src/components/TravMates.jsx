@@ -19,7 +19,7 @@ const TravMates = () => {
         <p className="pt-2">Mumbai,Maharastra</p>
         </div>
         <div className="pt-4">
-       <Link to={`/attraction/${id}`}> <button class="bg-black text-white w-36 h-12 rounded-2xl mt-8 hover:bg-red-900 font-poppins">CONNECT</button></Link>
+       <Link to={"/userinfo"}> <button class="bg-black text-white w-36 h-12 rounded-2xl mt-8 hover:bg-red-900 font-poppins">CONNECT</button></Link>
         </div>
         
     </div>

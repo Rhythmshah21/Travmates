@@ -9,7 +9,7 @@ const Home = () => {
     <div className="">
       <div className="  ">
         <div  className="h-screen flex justify-center items-center bg-bgphoto bg-fixed bg-cover">
-          <motion.p initial={{scale: 0}} animate={{scale:1 , y:[0,20]}} transition={{type:'tween', duration:2}} className=" text-secondary md:text-8xl lg:text-9xl text-5xl text-center top-2/3 mt-[400px] w-full font-bold font-playfair">
+          <motion.p initial={{scale: 0}} animate={{scale:1 , y:[0,5]}} transition={{type:'tween', duration:2}} className=" text-secondary md:text-8xl lg:text-9xl text-5xl text-center top-2/3 mt-[400px] w-full font-bold font-playfair">
             LET'S TRAVEL!
           </motion.p>
         </div>

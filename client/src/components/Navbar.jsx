@@ -67,7 +67,7 @@ const Nav = () => {
                 </Link>
               </li>
               <li className=""><button>
-                    <p className="normal-case font-poppins text-secondary bg-mint rounded-md text-xl px-4 py-2">
+                    <p className="normal-case font-poppins text-secondary bg-mint rounded-md my-1 text-xl px-4 py-2">
                       LOGOUT
                     </p>
                   </button></li>
