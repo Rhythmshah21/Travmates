@@ -14,13 +14,13 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     age: {
-        type: String,
+        type: Number,
         required: true
     },
-    date: {
-        type: String,
-        required: true
-    },
+    // date: {
+    //     type: String,
+    //     required: true
+    // },
     city: {
         type: String,
         required: true
@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
     },
     message: {
         type: String,
-        required: false
+        required: true
     },
 })
 

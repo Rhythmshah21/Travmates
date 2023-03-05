@@ -9,8 +9,8 @@ const createUser=asyncHandler(
     async(req,res)=>{
  
        
-        const {firstName,lastName,gender,age,date,city,state,country,message} =req.body;
-                 if(!firstName || !lastName || !gender || !age || !date || !city || !state || !country ){
+        const {firstName,lastName,gender,age,city,state,country,message} =req.body;
+                 if(!firstName || !lastName || !gender || !age || !city || !state || !country || !message){
                    res.status(400);
                   throw new Error("Please fill all the fields");
             }
@@ -20,7 +20,7 @@ const createUser=asyncHandler(
                                 lastName:req.body.lastName,
                                 gender:req.body.gender,
                                 age:req.body.age,
-                                date:req.body.date,
+                                // date:req.body.date,
                                 city:req.body.city,
                                 state:req.body.state,
                                 country:req.body.country,

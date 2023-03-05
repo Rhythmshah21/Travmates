@@ -4,12 +4,13 @@ import {useNavigate} from "react-router-dom"
 
 const Info = () => {
   const navigate = useNavigate();
+
   const [user, setUser] = useState({
     firstName: "",
-    LastName: "",
+    lastName: "",
     gender: "",
     age: "",
-    date: "",
+    // date: "",
     city: "",
     state: "",
     country: "",
@@ -27,18 +28,18 @@ const Info = () => {
 
   const PostData = async (e) => {
     e.preventDefault();
-    const {firstName,LastName,gender,age,date,city,state,country,message} = user;
-    const res = await fetch("/userprofile", {
+    const {firstName,lastName,gender,age,city,state,country,message} = user;
+    const res = await fetch("/api/users/newuser", {
       method: "POST",
       headers: {
         "Content-Type" : "application/json"
       },
       body: JSON.stringify({
-        firstName,LastName,gender,age,date,city,state,country,message
+        firstName,lastName,gender,age,city,state,country,message
       })
     });
     const data = await res.json();
-    if(data.status === 422 || !data){
+    if(data.status === 400 || !data){
       window.alert("profile not added ");
       console.log("profile not added ")
     }
@@ -84,9 +85,9 @@ const Info = () => {
                   </label>
                   <input
                     type="text"
-                    id="LastName"
-                    name="LastName"
-                    value={user.LastName}
+                    id="lastName"
+                    name="lastName"
+                    value={user.lastName}
                     onChange={handleInputs}
                     className="w-full bg-gray-100  rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-sm shadow-white"
                   />
@@ -106,7 +107,7 @@ const Info = () => {
                   ></input>
                 </div>
               </div>
-              <div class="p-2 w-1/3">
+              {/* <div class="p-2 w-1/3">
                 <div class="relative">
                   <label class="leading-7 text-sm text-red-600">
                    DateofBirth
@@ -120,7 +121,7 @@ const Info = () => {
                     class="w-full bg-gray-100  rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-sm shadow-white"
                   ></input>
                 </div>
-              </div>
+              </div> */}
               <div class="p-2 w-1/3">
                 <div class="relative">
                   <label for="age" class="leading-7 text-sm text-red-400">
