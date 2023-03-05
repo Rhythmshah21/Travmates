@@ -4,7 +4,7 @@ import data from "../Data";
 import axios from "axios";
 
 const TravMates = () => {
-  const {title} = useParams();
+  const {title,id} = useParams();
   const [profile, setProfile] = useState([]);
 
   useEffect(() => {
@@ -29,12 +29,12 @@ const TravMates = () => {
     {profile.map((profileData) => (
     <div className=" w-4/5 flex justify-between mx-auto">
         <div>
-          (interested && profileData)
+          {/* (interested && profileData) */}
           <p className="pt-8 text-2xl font-medium">{profileData.firstName}</p>
           <p className="pt-2">{profileData.city}</p>
         </div>
         <div className=" pt-10">
-        <Link to={`/attraction/${id}`}> 
+        <Link to={"/chat"}> 
           <button class="flex mx-auto text-secondary bg-mint border-0 py-2 px-6 focus:outline-none hover:bg-secondary/60 hover:text-mint font-medium rounded text-lg items-center text-center " >
             Connect
           </button>

@@ -6,20 +6,20 @@ const Footer = () => {
       <footer className="footer p-10 bg-dark text-base-content text-center">
   
   <div className='md:mx-auto'>
-    <span className="footer-title text-2xl md:text-3xl text-primary-focus">TRAVMATE</span> 
+    <span className="footer-title text-2xl md:text-3xl text-mint">TRAVMATE</span> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Explore</a> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Blogs</a>
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">About us</a> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Contact</a> 
   </div> 
   <div className='md:mx-auto'>
-    <span className="footer-title text-2xl md:text-3xl text-primary-focus">Legal</span> 
+    <span className="footer-title text-2xl md:text-3xl text-mint">Legal</span> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Terms of use</a> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Privacy policy</a> 
     <a className="link link-hover text-xl md:text-2xl text-primary font-poppins">Cookie policy</a>
   </div> 
   <div className='md:mx-auto'>
-    <span className="footer-title text-2xl md:text-3xl text-primary-focus">Newsletter</span> 
+    <span className="footer-title text-2xl md:text-3xl text-mint">Newsletter</span> 
     <div className="form-control w-80">
       <label className="label">
         <span className="label-text font-poppins p-2 md:text-xl text-lg text-primary">Enter your email address</span>

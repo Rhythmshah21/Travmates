@@ -7,7 +7,7 @@ import { Appstate } from "../App";
 const Nav = () => {
   const links = [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Explore", link: "/explore" },
+    { id: 2, name: "Explore", link: "/userinfo" },
     { id: 3, name: "About", link: "/about" },
     { id: 4, name: "Blogs", link: "/blogs" },
     { id: 5, name: "Kanban", link: "/kanban" },
