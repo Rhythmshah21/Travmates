@@ -6,10 +6,12 @@ import { Appstate } from "../App";
 
 const Nav = () => {
   const links = [
-    { id: 1, name: "HOME", link: "/" },
-    { id: 2, name: "EXPLORE", link: "/explore" },
-    { id: 3, name: "ABOUT", link: "/about" },
-    { id: 4, name: "BLOGS", link: "/blogs" },
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "Explore", link: "/userinfo" },
+    { id: 3, name: "About", link: "/about" },
+    { id: 4, name: "Blogs", link: "/blogs" },
+    { id: 5, name: "Kanban", link: "/kanban" },
+    { id: 6, name: "Calendar", link: "/calendar" },
     // { id: 5, name: "INFO ", link: "/userinfo" },
   ];
   let [open, setOpen] = useState(false);
@@ -55,35 +57,32 @@ const Nav = () => {
                 </a>
               </li>
             ))}
-            {useAppstate.login ?  
-            <div className="flex">
-              <li className=" mx-2">
-                <Link to={"/userinfo"}>
+            {useAppstate.login ? (
+              <div className="flex">
+                <li className=" mx-2">
+                  <Link to={"/userinfo"}>
+                    <Button>
+                      <p className="text-primary font-poppins hover:text-white ">
+                        Info
+                      </p>
+                    </Button>
+                  </Link>
+                </li>
+                <li className="">
+                  
+                </li>
+              </div>
+            ) : (
+              <li className="">
+                <Link to={"/login"}>
                   <Button>
-                    <p className="normal-case font-poppins text-secondary bg-mint rounded-md text-xl px-4 py-2">
-                      INFO
+                    <p className="normal-case  text-dark bg-mint rounded-md py-2 text-xl px-4 font-poppins">
+                      LOGIN
                     </p>
                   </Button>
                 </Link>
               </li>
-              <li className=""><button>
-                    <p className="normal-case font-poppins text-secondary bg-mint rounded-md my-1 text-xl px-4 py-2">
-                      LOGOUT
-                    </p>
-                  </button></li>
-            </div>
-              :
-
-            <li className="">
-              <Link to={"/login"}>
-                <Button>
-                  <p className="normal-case  text-dark bg-mint rounded-md py-2 text-xl mx-2 px-4 font-poppins">
-                    LOGIN
-                  </p>
-                </Button>
-              </Link>
-            </li>
-            }
+            )}
           </ul>
         </div>
       </div>

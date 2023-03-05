@@ -1,10 +1,10 @@
 import React from 'react'
-import data from "./../Data.js";
+import data from "../Data";
 import { Button } from "@mui/material";
 import { useParams } from 'react-router-dom';
 
 const TouristAttraction = () => {
-  const {  } = useParams();
+  const { title } = useParams();
   return (
     <div className="max-w-[1640px] mx-auto p-4 grid md:grid-cols-2 gap-6 my-20">
       {data.Tourist_locations.map((e) => {

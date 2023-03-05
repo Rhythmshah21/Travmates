@@ -62,19 +62,19 @@ const Info = () => {
   const [Loading, setLoading] = useState(false);
 
   return (
-    <div className="font-montserrat my-20 ">
+    <div className="font-montserrat my-10 ">
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-4">
-            <h1 className="sm:text-3xl text-xl font-medium  mb-4 text-red-600">
+            <p className="text-lg font-medium font-playfair mb-4 text-primary">
               INFO
-            </h1>
+            </p>
           </div>
           <form className="lg:w-1/2 md:w-2/3 mx-auto" method="POST">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label for="name" className="leading-7 text-sm text-red-400">
+                  <label for="name" className="leading-7 text-lg text-primary">
                     FirstName
                   </label>
                   <input
@@ -89,7 +89,7 @@ const Info = () => {
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label for="email" className="leading-7 text-sm text-red-600">
+                  <label for="email" className="leading-7 text-lg text-primary">
                    LastName
                   </label>
                   <input
@@ -102,9 +102,9 @@ const Info = () => {
                   />
                 </div>
               </div>
-              <div class="p-2 w-1/3">
+              <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label class="leading-7 text-sm text-red-600">
+                  <label class="leading-7 text-lg text-primary">
                     Gender
                   </label>
                   <input
@@ -118,7 +118,7 @@ const Info = () => {
               </div>
               {/* <div class="p-2 w-1/3">
                 <div class="relative">
-                  <label class="leading-7 text-sm text-red-600">
+                  <label class="leading-7 text-sm text-primary">
                    DateofBirth
                   </label>
                   <input
@@ -131,9 +131,9 @@ const Info = () => {
                   ></input>
                 </div>
               </div> */}
-              <div class="p-2 w-1/3">
+              <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="age" class="leading-7 text-sm text-red-400">
+                  <label for="age" class="leading-7 text-lg text-primary">
                     Age
                   </label>
                   <input
@@ -148,7 +148,7 @@ const Info = () => {
               </div>
               <div class="p-2 w-1/3">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-red-400">
+                  <label for="name" class="leading-7 text-lg text-primary">
                     City
                   </label>
                   <input
@@ -163,7 +163,7 @@ const Info = () => {
               </div>
               <div class="p-2 w-1/3">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-red-400">
+                  <label for="name" class="leading-7 text-lg text-primary">
                     State
                   </label>
                   <input
@@ -178,7 +178,7 @@ const Info = () => {
               </div>
               <div class="p-2 w-1/3">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-red-400">
+                  <label for="name" class="leading-7 text-lg text-primary">
                     Country
                   </label>
                   <input
@@ -193,7 +193,7 @@ const Info = () => {
               </div>
               <div class="p-2 w-full">
                 <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-red-600">
+                  <label for="message" class="leading-7 text-lg text-primary">
                     Description
                   </label>
                   <textarea
@@ -206,7 +206,7 @@ const Info = () => {
                 </div>
               </div>
               <div class="p-2 w-full">
-                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg " onClick={PostData}>
+                <button class="flex mx-auto text-secondary bg-mint border-0 py-2 px-8 focus:outline-none hover:bg-secondary/60 hover:text-mint font-medium rounded text-lg" onClick={PostData}>
                   {Loading ? (
                     <TailSpin height={25} color="white" />
                   ) : (
