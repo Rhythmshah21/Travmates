@@ -21,7 +21,7 @@ const Home = () => {
               CONNECT
             </p>
             <p className="text-center my-2 mx-auto text-white font-medium text-xl md:text-2xl font-poppins ">
-              Lets connect naaa
+            The ultimate networking tool
             </p>
           </div>
           <div className="bg-[#2A70DE] py-8">
@@ -29,7 +29,7 @@ const Home = () => {
               TRAVEL
             </p>
             <p className="text-center my-2 mx-auto text-white font-light text-xl md:text-2xl font-poppins">
-              Lets travel naaa
+            Travel beyond boundaries
             </p>
           </div>
           <div className="bg-[#213E8C] py-8">
@@ -37,7 +37,7 @@ const Home = () => {
               EXPLORE
             </p>
             <p className="text-center my-2 mx-auto text-white font-light text-xl md:text-2xl font-poppins">
-              Lets explore naaa
+            Journey into the unknown with us
             </p>
           </div>
         </div>

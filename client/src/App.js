@@ -15,6 +15,7 @@ import Register from "./components/Register";
 import ChatRoom from "./pages/ChatRoom";
 
 // 
+// import Chatbot from "./pages/Chatbot";
 
 const Appstate = createContext();
 
