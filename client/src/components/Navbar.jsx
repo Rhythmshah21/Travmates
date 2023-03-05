@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Appstate } from "../App";
 
+
 const Nav = () => {
   const links = [
     { id: 1, name: "HOME", link: "/" },
@@ -14,11 +15,6 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   const useAppstate = useContext(Appstate);
 
-  // const Handleclick = () => {
-
-  //     useAppstate.setLogin(false)
-
-  // }
   return (
     <>
       <div className="shadow-md w-full font-montserrat bg-dark top-0 left-0 z-10 sticky">
@@ -70,7 +66,11 @@ const Nav = () => {
                   </Button>
                 </Link>
               </li>
-              <li className=""></li>
+              <li className=""><button>
+                    <p className="normal-case font-poppins text-secondary bg-mint rounded-md text-xl px-4 py-2">
+                      LOGOUT
+                    </p>
+                  </button></li>
             </div>
               :
 

@@ -15,7 +15,7 @@
       {
         id:3,
         title: "London",
-        description: "London is the capital and largest city of England and the United Kingdom, known for its history, culture, and iconic landmarks.",
+        description: "London is the capital of England , known for its history, culture, and iconic landmarks.",
         image: "/Images/London.jpg"
       },
       {
@@ -33,7 +33,7 @@
       {
         id:6,
         title: "Beijing",
-        description: "Beijing is the capital of China and one of the world's most populous cities, known for its rich history and modern architecture.",
+        description: "Beijing is the capital of China , known for its rich history and modern architecture.",
         image: "/Images/Beijing.jpg"
       },
       {
@@ -45,31 +45,31 @@
       {
         id:8,
         title: "Dubai",
-        description: "Dubai is a city in the United Arab Emirates known for its modern architecture, luxury shopping, and bustling nightlife.",
+        description: "Dubai is a city in the United Arab Emirates , luxury shopping, and bustling nightlife.",
         image: "/Images/Dubai.jpg"
       },
       {
         id:9,
         title: "Cairo",
-        "description": "Cairo is the capital of Egypt and one of the oldest cities in the world, known for its historic landmarks and rich culture.",
+        "description": "Cairo is the capital of Egypt , known for its historic landmarks and rich culture.",
         image: "/Images/Cairo.jpg"
       },
       {
         id:10,
         title: "Rio de Janeiro",
-        description: "Rio de Janeiro is a city in Brazil known for its beautiful beaches, lively culture, and iconic landmarks like Christ the Redeemer.",
+        description: "Rio de Janeiro is a city in Brazil known for its beautiful beaches, iconic landmarks like Christ the Redeemer.",
         image:"/Images/RiodeJaneiro.jpg"
       },
       {
         id:11,
         title: "Bangkok",
-        description: "Bangkok is the capital of Thailand and a popular destination known for its vibrant street life, historic temples, and delicious food.",
+        description: "Bangkok is the capital of Thailand known for its vibrant street life, historic temples, and delicious food.",
         image: "/Images/Bangkok.jpg"
       },
       {
         id:12,
         title: "Moscow",
-        description: "Moscow is the capital of Russia and one of the world's most iconic cities, known for its history, architecture, and art.",
+        description: "Moscow is the capital of Russia , known for its history, architecture, and art.",
         image: "/Images/Moscow.jpg"
       },
       {
@@ -81,7 +81,7 @@
       {
         id:14,
         title: "Mumbai",
-        description: "Mumbai is the largest city in India and a hub for commerce and entertainment, known for its Bollywood film industry and iconic landmarks like the Gateway of India.",
+        description: "Mumbai is the largest city in India and a hub for commerce and entertainment, known for its Bollywood film industry.",
         image: "/Images/Mumbai.jpg"
       },
       {id:15,

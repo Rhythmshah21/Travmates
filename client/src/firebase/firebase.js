@@ -19,5 +19,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
 export const UsersRef = collection(db,"Users")
+// export const messagesEndRef = collection(db,"messages")
 export const auth = getAuth(app);
 export default app

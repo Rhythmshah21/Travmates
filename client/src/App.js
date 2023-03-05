@@ -13,7 +13,7 @@ import TouristAttraction from "./components/TouristAttraction";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import ChatRoom from "./pages/ChatRoom";
-import { PrivateRoute } from "./Routes/PrivateRoute";
+
 // 
 
 const Appstate = createContext();
@@ -36,11 +36,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/schedule/:id" element={<Schedule/>} />
-        <Route path="/travmates/:id" element={<TravMates />} />
-        <Route path="/attraction/:id" element={<TouristAttraction />} />
+        <Route path="/schedule/:title" element={<Schedule/>} />
+        <Route path="/travmates/:title" element={<TravMates />} />
+        <Route path="/attraction/:title" element={<TouristAttraction />} />
         <Route path="/userinfo" element={<Info />} />
-        <Route path="/chatRoom" element={<PrivateRoute> <ChatRoom /> </PrivateRoute>} />
+        {/* <Route path="/chatRoom" element={<PrivateRoute> <ChatRoom /> </PrivateRoute>} /> */}
 
         
       </Routes>
