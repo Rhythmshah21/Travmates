@@ -12,7 +12,7 @@ import TravMates from "./components/TravMates";
 import TouristAttraction from "./components/TouristAttraction";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Chatbot from "./pages/Chatbot";
+// import Chatbot from "./pages/Chatbot";
 
 const Appstate = createContext();
 
