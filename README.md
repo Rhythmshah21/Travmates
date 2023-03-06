@@ -1,7 +1,7 @@
 # Code-Of-Duty_Clash-Of-Codes
 # Travmate - Travel and Connect Website 
 This website matches solo travellers with potential travel companions and could help people build relationships and make the most of their journeys. Users will input their travel plans and preferences, and the app could suggest compatible matches based on location, interests, and other criteria, without actually revealing all personal details. Also contains a blogs section that fetches data from MongoDB database and uses framer motion for animations.
-## Tech Stack 💻
+## Tech Stack and Frameworks 💻
 ![](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
