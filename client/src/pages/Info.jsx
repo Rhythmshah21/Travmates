@@ -52,7 +52,7 @@ const Info = () => {
     else {
       swal({
         title: "Profile Added",
-        icon: "Success",
+        icon: "success",
         buttons: false,
         timer: 3000
       })
