@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import {useNavigate} from "react-router-dom"
+import swal from "sweetalert";
 
 const Info = () => {
   const navigate = useNavigate();
